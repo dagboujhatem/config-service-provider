@@ -49,7 +49,7 @@ class ConfigServiceProvider implements ServiceProviderInterface
         );
 
         $app[$resourcesKey] = $app->share(
-            function (Application $app) {
+            function () {
                 return new ResourceCollection();
             }
         );
