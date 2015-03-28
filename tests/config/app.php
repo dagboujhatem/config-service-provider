@@ -1,0 +1,8 @@
+<?php
+
+return [
+    'shop' => 'Dafiti',
+    'info' => [
+        'website' => 'http://www.dafiti.com.br'
+    ]
+];

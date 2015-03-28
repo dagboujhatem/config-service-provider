@@ -1,0 +1,42 @@
+{
+    "name": "dafiti/config-service-provider",
+    "description": "Based Flint/Tacker config service provider for Silex",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "silex",
+        "config",
+        "dafiti",
+        "tacker",
+        "flint"
+    ],
+    "authors": [
+        {
+            "name": "Fabio da Silva Ribeiro",
+            "email": "silva.ribeiro@dafiti.com.br"
+        }
+    ],
+    "support": {
+        "issue": "https://github.com/dafiti/config-service-provider/issues"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "silex/silex": "~1.1",
+        "flint/tacker": "~0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "fabpot/php-cs-fixer": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dafiti\\Silex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dafiti\\Silex\\": "tests/"
+        }
+    }
+}
