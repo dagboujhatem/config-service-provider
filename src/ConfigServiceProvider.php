@@ -30,9 +30,9 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $cacheKey = sprintf('%s.cache_dir', $this->prefix);
         $loaderKey = sprintf('%s.loader', $this->prefix);
         $locatorKey = sprintf('%s.locator', $this->prefix);
+        $pathsKey = sprintf('%s.paths', $this->prefix);
         $resolverKey = sprintf('%s.resolver', $this->prefix);
         $resourcesKey = sprintf('%s.resources', $this->prefix);
-        $pathsKey = sprintf('%s.paths', $this->prefix);
 
         if (!isset($app[$pathsKey])) {
             $app[$pathsKey] = [];
@@ -66,7 +66,7 @@ class ConfigServiceProvider implements ServiceProviderInterface
         );
 
         $app[$loaderKey] = $app->share(
-            function (Application $app) use ($resolverKey, $resourcesKey) {
+            function (Application $app) use ($cacheKey, $resolverKey, $resourcesKey) {
                 $normalizer = new ChainNormalizer();
                 $normalizer->add(new PimpleNormalizer($app));
                 $normalizer->add(new EnvironmentNormalizer());
@@ -80,7 +80,7 @@ class ConfigServiceProvider implements ServiceProviderInterface
                 );
 
                 $loader->setDebug($app['debug']);
-                $loader->setCacheDir($app['config.cache_dir']);
+                $loader->setCacheDir($app[$cacheKey]);
 
                 return $loader;
             }

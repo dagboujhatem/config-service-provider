@@ -37,7 +37,8 @@ class ConfigServiceProviderTest extends \PHPUnit_Framework_TestCase
         $app->register(new ConfigServiceProvider(), [
             'config.paths' => [
                 __DIR__ . DIRECTORY_SEPARATOR . 'config'
-            ]
+            ],
+            'config.cache_dir' => __DIR__ . DIRECTORY_SEPARATOR . 'data/cache'
         ]);
 
         $app['config']->load($fileType);
