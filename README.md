@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/travis/dafiti/config-service-provider/master.svg?style=flat-square)](https://travis-ci.org/dafiti/config-service-provider)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/dafiti/config-service-provider/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/dafiti/config-service-provider/?branch=master)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/dafiti/config-service-provider/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/dafiti/config-service-provider/?branch=master)
-[![HHVM](https://img.shields.io/hhvm/dafiti/config-service-provider.svg)](https://travis-ci.org/dafiti/config-service-provider)
+[![HHVM](https://img.shields.io/hhvm/dafiti/config-service-provider.svg?style=flat-square)](https://travis-ci.org/dafiti/config-service-provider)
 [![Latest Stable Version](https://img.shields.io/packagist/v/dafiti/config-service-provider.svg?style=flat-square)](https://packagist.org/packages/dafiti/config-service-provider)
 [![Total Downloads](https://img.shields.io/packagist/dt/dafiti/config-service-provider.svg?style=flat-square)](https://packagist.org/packages/dafiti/config-service-provider)
 [![License](https://img.shields.io/packagist/l/dafiti/config-service-provider.svg?style=flat-square)](https://packagist.org/packages/dafiti/config-service-provider)
