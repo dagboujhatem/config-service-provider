@@ -53,7 +53,8 @@ class ConfigServiceProviderTest extends \PHPUnit_Framework_TestCase
             ['app.ini'],
             ['app.json'],
             ['app.php'],
-            ['app.yml']
+            ['app.yml'],
+            ['import.yml']
         ];
     }
 }
