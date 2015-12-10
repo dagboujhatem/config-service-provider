@@ -42,6 +42,13 @@ echo $app['config']['shop'];
 
 ```
 
+#### Inheriting
+```yml
+imports:
+    - config.yml
+    - config2.yml
+```
+
 ## License
 
 MIT License
